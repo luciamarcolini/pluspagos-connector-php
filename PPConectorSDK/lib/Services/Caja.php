@@ -53,7 +53,7 @@ class Caja
             $authorization
         );
         $this->restClient = new \PPConnectorSDK\Services\RESTClient($this->endpoint, $new_headers);
-        $RESTResponse = $this->restClient->delete("caja/delete?codigo=".$codigo, "");
+        $RESTResponse = $this->restClient->delete("caja/delete?codigo=".rawurlencode($codigo), "");
         return $RESTResponse;
     }
 
@@ -79,7 +79,7 @@ class Caja
             $authorization
         );
         $this->restClient = new \PPConnectorSDK\Services\RESTClient($this->endpoint, $new_headers);
-        $RESTResponse = $this->restClient->get("caja-details/detail?codigo=".$codigo, "");
+        $RESTResponse = $this->restClient->get("caja-details/detail?codigo=".rawurlencode($codigo), "");
         return $RESTResponse;
     }
 }
