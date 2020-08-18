@@ -1,6 +1,6 @@
 {
-  "name": "SDKConnector",
-  "description": "SDK PHP",
+  "name": "sdkconnector/ppconectorsdk",
+  "description": "SDK PlusPagos PHP",
   "require": {
     "php": ">=5.3"
   },
