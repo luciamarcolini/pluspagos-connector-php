@@ -11,7 +11,7 @@ use PPConnectorSDK\Models\AmbienteEnum;
 
 class Connector 
 {
-    const endPointSand = "https://sandboxpp.asjservicios.com.ar:9003/";
+    const endPointSand = "https://sandboxpp.asjservicios.com.ar:8082/";
     const endPointProd = "https://botonpp.asjservicios.com.ar:8082/";
     const endPointTest = "https://testingpp.asjservicios.com.ar:9100/";
     public function __construct($ambiente)
