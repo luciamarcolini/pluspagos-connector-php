@@ -76,6 +76,8 @@ namespace PPConnectorSDK\Services;
 		curl_setopt($curl, CURLOPT_TIMEOUT, 60000);
 		curl_setopt($curl, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
 		curl_setopt($curl, CURLOPT_CUSTOMREQUEST, $method);
+		curl_setopt($curl, CURLOPT_CAINFO, dirname(__FILE__)."/cacert.pem");
+
 		set_time_limit(120);
 		if (empty($this->headers))
 		{
